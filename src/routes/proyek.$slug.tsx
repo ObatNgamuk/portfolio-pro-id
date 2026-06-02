@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 import { Container } from "@/components/section";
-import { projects } from "@/lib/portfolio-data";
+import { projects, type Project } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/proyek/$slug")({
   loader: ({ params }) => {
