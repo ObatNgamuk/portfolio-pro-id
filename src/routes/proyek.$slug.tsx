@@ -42,7 +42,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function ProjectDetail() {
-  const { project: p } = Route.useLoaderData();
+  const { project: p } = Route.useLoaderData() as { project: Project };
 
   return (
     <>
